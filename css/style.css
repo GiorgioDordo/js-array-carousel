@@ -10,13 +10,13 @@
     margin: 0 auto;
 }
 
-
 /* Carousel */
 
 #carousel {
     height: 432px;
     width: 760px;
     margin: 30px auto;
+    position: relative;
 }
 
 #carousel .gallery {
@@ -34,5 +34,36 @@
 }
 
 #carousel .fa-solid {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+}
+
+#prev {
+    left: -5%;
+}
+
+#next {
+    right: -5%;
+}
+
+/* Thumbnails */
+#thumbnails {
+    width: 760px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#thumbnails img {
+    height: 100%;
+    width: 20%;
+}
+
+#thumbnails img.active {
+    box-shadow: 0 0 10px blue;
 }
